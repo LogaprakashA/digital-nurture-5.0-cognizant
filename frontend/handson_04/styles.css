@@ -1,0 +1,39 @@
+#loading{
+
+    font-size:20px;
+
+    color:#0066cc;
+
+    margin:20px;
+
+}
+
+.notification{
+
+    background:white;
+
+    margin:15px 0;
+
+    padding:15px;
+
+    border-radius:8px;
+
+    box-shadow:0 2px 5px rgba(0,0,0,.2);
+
+}
+
+#error-message{
+
+    color:red;
+
+    font-weight:bold;
+
+    margin:20px;
+
+}
+
+#retry-btn{
+
+    margin:20px;
+
+}

@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f6f9;
+}
+
+/* HEADER */
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#0066cc;
+    color:white;
+
+    padding:20px 40px;
+
+}
+
+nav ul{
+
+    display:flex;
+    list-style:none;
+    gap:25px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+
+}
+
+nav a:hover{
+
+    color:yellow;
+
+}
+
+/* HERO */
+
+#hero{
+
+    min-height:40vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+    background:white;
+
+}
+
+#hero h1{
+
+    font-size:clamp(1.8rem,3vw,3rem);
+
+}
+
+#hero p{
+
+    margin:20px;
+
+}
+
+button{
+
+    padding:12px 25px;
+
+    border:none;
+
+    background:#0066cc;
+
+    color:white;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:#004999;
+
+}
+
+/* STATS */
+
+.stats{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    background:#0066cc;
+
+    color:white;
+
+    padding:30px;
+
+}
+
+.stat-box{
+
+    text-align:center;
+
+}
+
+/* COURSE GRID */
+
+#courses{
+
+    padding:40px;
+
+}
+
+#courses h2{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.course-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:20px;
+
+}
+
+.course-card{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 3px 8px rgba(0,0,0,0.2);
+
+    min-height:180px;
+
+}
+
+.course-card h3{
+
+    color:#0066cc;
+
+    margin-bottom:10px;
+
+}
+
+.course-card p{
+
+    margin-bottom:20px;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    text-align:center;
+
+    background:#0066cc;
+
+    color:white;
+
+    padding:20px;
+
+    margin-top:40px;
+
+}
+
+/* TABLET */
+
+@media(min-width:768px){
+
+.course-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* DESKTOP */
+
+@media(min-width:1024px){
+
+.course-grid{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+#hero{
+
+padding:80px;
+
+}
+
+}
